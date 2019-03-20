@@ -126,7 +126,7 @@ if (message.content.startsWith(adminprefix + 'setava')) {
 
 client.on('guildMemberAdd', member => {
   
-  const channel = member.guild.channels.find(ch => ch.name === 'we;come');
+  const channel = member.guild.channels.find(ch => ch.name === 'welcome');
  
   if (!channel) return;
 
@@ -154,4 +154,6 @@ client.on('guildMemberAdd', member => {
    //  yumz.send(`<@${member.user.id}> joined using invite code ${invite.code} from <@${inviter.id}>. Invite was used ${invite.uses} times since its creation.`);
   }); 
 });
+
+
 client.login(process.env.BOT_TOKEN);
