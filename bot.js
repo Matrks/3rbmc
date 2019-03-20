@@ -126,7 +126,7 @@ if (message.content.startsWith(adminprefix + 'setava')) {
 
 client.on('guildMemberAdd', member => {
   
-  const channel = member.guild.channels.find(ch => ch.name === 'welcome');
+  const channel = member.guild.channels.find(ch => ch.name === '-');
  
   if (!channel) return;
 
